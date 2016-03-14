@@ -8,7 +8,6 @@ open runner
 open System
 
 //start an instance of the firefox browser
-start firefox
 
 //this is how you define a test
 "taking canopy for a spin" &&& fun _ ->
@@ -19,7 +18,12 @@ start firefox
 
     //assert that the element with an id of 'welcome' has
     //the text 'Welcome'
-    "#testfield1" << "Welcome"
+    "#testfield1" << "bar"
 
-run()
+    "#testfield1" == "bar"
 
+
+let runTests () =
+    start firefox
+    run()
+    quit()
