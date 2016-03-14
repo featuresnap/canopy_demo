@@ -5,4 +5,6 @@ NUGET
       FSharp.Core (>= 3.0.2)
       Selenium.WebDriver (2.52.0)
     FSharp.Core (4.0.0.1)
+    Selenium.Support (2.52.0)
+      Selenium.WebDriver (>= 2.52.0)
     Selenium.WebDriver (2.52.0)

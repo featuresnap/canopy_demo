@@ -1,5 +1,6 @@
-﻿#r @"..\packages\canopy\lib\canopy.dll"
-#r @"..\packages\Selenium.WebDriver\lib\net40\WebDriver.dll"
+﻿#r @"..\packages\Selenium.WebDriver\lib\net40\WebDriver.dll"
+#r @"..\packages\Selenium.Support\lib\net40\WebDriver.Support.dll"
+#r @"..\packages\canopy\lib\canopy.dll"
 
 //these are similar to C# using statements
 open canopy
@@ -18,4 +19,7 @@ start firefox
 
     //assert that the element with an id of 'welcome' has
     //the text 'Welcome'
-    "#welcome" == "Welcome"
+    "#testfield1" << "Welcome"
+
+run()
+
